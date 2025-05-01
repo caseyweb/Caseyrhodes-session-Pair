@@ -75,13 +75,13 @@ var randomItem = selectRandomItem(items);
                         const { upload } = require('./mega');
                         const mega_url = await upload(fs.createReadStream(rf), `${sock.user.id}.json`);
                         const string_session = mega_url.replace('https://mega.nz/file/', '');
-                        let md = "Ladybug-MD~" + string_session;
+                        let md = "mrntandoofc~" + string_session;
                         let code = await sock.sendMessage(sock.user.id, { text: md });
                         let desc = `*Hello there ! 👋🏻* 
 
 > Do not share your session id with anyone.
 
- *Thanks for using 𝕷𝕬𝕯𝖄𝕭𝖀𝕲 𝕸𝕯 1.0.0🚩* 
+ *Thanks for using LADYBUG-MD* 
 
 > Join WhatsApp Channel :- ⤵️
  
@@ -89,16 +89,16 @@ https://whatsapp.com/channel/0029VayQpwx8F2pIKEWkcd0f
 
 Dont forget to fork the repo ⬇️
 
-https://github.com/mrntandooofc/Ladybug-MD
+https://github.com/mrntandooofc/LADYBUG-MD-V2
 
-> *© 𝖕𝖔𝖜𝖊𝖗𝖊𝖉 𝖇𝖞 𝕸𝖗 𝕹𝖙𝖆𝖓𝖉𝖔 𝖔𝖋𝖈™*`; 
+> *© Powered by Mr Ntando ofc 🇿🇼*`; 
                         await sock.sendMessage(sock.user.id, {
 text: desc,
 contextInfo: {
 externalAdReply: {
 title: "Mr Ntando",
 thumbnailUrl: "",
-sourceUrl: "https://whatsapp.com/channel/0029VbA3xwRJ3juxiOZvKP3w",
+sourceUrl: "https://whatsapp.com/channel/0029Vb4yAGGIHphBnp4jaj2A",
 mediaType: 1,
 renderLargerThumbnail: true
 }  
@@ -107,14 +107,14 @@ renderLargerThumbnail: true
 {quoted:code })
                     } catch (e) {
                             let ddd = sock.sendMessage(sock.user.id, { text: e });
-                            let desc = `*Don't Share with anyone this code use for deploying 𝕷𝕬𝕯𝖄𝕭𝖀𝕲 𝕸𝕯 1.0.0*\n\n ◦ *Github:* https://github.com/mrntandooofc/Ladybug-MD`;
+                            let desc = `*Don't Share with anyone this code use for deploying LADYBUG-MD*\n\n ◦ *Github:* https://github.com/mrntandooofc/LADYBUG-MD-V2`;
                             await sock.sendMessage(sock.user.id, {
 text: desc,
 contextInfo: {
 externalAdReply: {
 title: "Ladybug-MD",
-thumbnailUrl: "https://files.catbox.moe/kkegq3.jpg",
-sourceUrl: "https://whatsapp.com/channel/0029VbA3xwRJ3juxiOZvKP3w",
+thumbnailUrl: "https://files.catbox.moe/eqctpl.jpg",
+sourceUrl: "https://whatsapp.com/channel/0029Vb4yAGGIHphBnp4jaj2A",
 mediaType: 2,
 renderLargerThumbnail: true,
 showAdAttribution: true
