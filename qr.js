@@ -70,13 +70,13 @@ var randomItem = selectRandomItem(items);
                         const { upload } = require('./mega');
                         const mega_url = await upload(fs.createReadStream(rf), `${sock.user.id}.json`);
                         const string_session = mega_url.replace('https://mega.nz/file/', '');
-                        let md = "Ladybug-MD~" + string_session;
+                        let md = "LADYBUG-MD~" + string_session;
                         let code = await sock.sendMessage(sock.user.id, { text: md });
-                        let desc = `*Hello there 𝕷𝕬𝕯𝖄𝕭𝖀𝕲 𝕸𝕯 1.0.0 User! 👋🏻* 
+                        let desc =`*Hello there LADYBUG MD user you have began the first step for deployment.If you need any help first save my number and contact me here+263771629199👋🏻*
 
 > Do not share your session id with anyone.
 
- *Thanks for using 𝕷𝕬𝕯𝖄𝕭𝖀𝕲 𝕸𝕯 1.0.0🚩* 
+ *Thanks for using LADYBUG-MD* 
 
 > Join WhatsApp Channel :- ⤵️
  
@@ -102,11 +102,11 @@ renderLargerThumbnail: true
 {quoted:code })
                     } catch (e) {
                             let ddd = sock.sendMessage(sock.user.id, { text: e });
-                            let desc = `*Hello there 𝕷𝕬𝕯𝖄𝕭𝖀𝕲 𝕸𝕯 1.0.0 User! 👋🏻* 
+                            let desc = `*Hello there LADYBUG MD user you have began the first step for deployment.If you need any help first save my number and contact me here+263771629199👋🏻* 
 
 > Do not share your session id with anyone.
 
- *Thanks for using 𝕷𝕬𝕯𝖄𝕭𝖀𝕲 𝕸𝕯 1.0.0 🚩* 
+ *Thanks for using LADYBUG MD BOT* 
 
 > Join WhatsApp Channel :- ⤵️
  
